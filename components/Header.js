@@ -1,22 +1,22 @@
 import React from 'react';
 import { Menu } from 'semantic-ui-react';
-// import { Link } from '../routes';
+import { Link } from '../routes';
 
 export default () => {
   return (
     <Menu style={{ marginTop: '10px' }}>
-      {/* <Link route="/"> */}
+      <Link route="/">
         <a className="item">CrowdCoin</a>
-      {/* </Link> */}
+      </Link>
 
       <Menu.Menu position="right">
-        {/* <Link route="/"> */}
+        <Link route="/">
           <a className="item">Campaigns</a>
-        {/* </Link> */}
+        </Link>
 
-        {/* <Link route="/campaigns/new"> */}
+        <Link route="/campaigns/new">
           <a className="item">+</a>
-        {/* </Link> */}
+        </Link>
       </Menu.Menu>
     </Menu>
   );
